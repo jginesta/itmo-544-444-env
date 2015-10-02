@@ -4,12 +4,10 @@ sudo apt-get update -y
 
 sudo apt-get install -y apache2 git
 
-git clone https://github.com/jginesta/itmo544-444-fall2015.git
-git clone https://github.com/jginesta/itmo-544-444-env.git
-git clone https://github.com/jginesta/itmo-544-444-app
+git clone https://github.com/jginesta/itmo544-444-fall2015.git /tmp/web/
 
-mv ./itmo544-444-fall2015/images /var/www/html/images
+sudo mv /tmp/web/* /var/www/html/
 
-mv ./itmo544-444-fall2015/index.html /var/www/html
+sudo service apache2 restart
 
 echo "Hello!" > /tmp/hello.txt
