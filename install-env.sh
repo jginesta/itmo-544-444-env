@@ -16,6 +16,9 @@ sudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt
 #Falta &>
 sudo mv vendor /var/www/html &> /tmp/movevendor.txt
 #Falta &>
+
+aws rds create-db-subnet-group --db-subnet-group-name itmo544-sgn  --subnet-ids subnet-e42819cf subnet-e42819cf --db-subnet-group-description itmosg-jgl
+
 sudo php /var/www/html/setup.php &> /tmp/database-setup.txt
 #Falta &>
 sudo service apache2 restart
