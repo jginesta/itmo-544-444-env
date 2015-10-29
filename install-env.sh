@@ -10,13 +10,13 @@ sudo mv /tmp/web/* /var/www/html/
 
 sudo mv ./itmo544-444-fall2015/*.php /var/www/html
 
-sudo curl -sS https://getcomposer.org/installer | sudo php > /tmp/getcomposer.txt
+sudo curl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt
 #Falta &>
-sudo php composer.phar require aws/aws-sdk-php > /tmp/runcomposer.txt
+sudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt
 #Falta &>
-sudo mv vendor /var/www/html > /tmp/movevendor.txt
+sudo mv vendor /var/www/html &> /tmp/movevendor.txt
 #Falta &>
-sudo php /var/www/html/setup.php > /tmp/database-setup.txt
+sudo php /var/www/html/setup.php &> /tmp/database-setup.txt
 #Falta &>
 sudo service apache2 restart
 
