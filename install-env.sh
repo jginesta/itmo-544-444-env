@@ -2,7 +2,7 @@
 
 sudo apt-get update -y
 
-sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql awscli rdscli
+sudo apt-get install -y apache2 git php5 php5-curl mysql-client curl php5-mysql
 
 git clone https://github.com/jginesta/itmo544-444-fall2015.git /tmp/web/
 
