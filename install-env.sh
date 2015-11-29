@@ -2,7 +2,9 @@
 
 sudo apt-get update -y
 
-sudo apt-get -y install apache2 git php5 php5-curl mysql-client curl php5-mysql php5-imagick
+sudo apt-get -y install apache2 git php5 php5-curl mysql-client curl php5-mysql
+
+sudo apt-get install php5-imagick 
 
 sudo service apache2 reload
 
@@ -11,6 +13,9 @@ git clone https://github.com/jginesta/itmo544-444-fall2015.git /tmp/web/
 sudo mv /tmp/web/* /var/www/html/
 
 sudo mv ./itmo544-444-fall2015/*.php /var/www/html
+
+//sudo mv ./itmo544-444-fall2015/images /var/www/html
+
 
 sudo curl -sS https://getcomposer.org/installer | sudo php
 # &> /tmp/getcomposer.txt
