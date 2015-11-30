@@ -17,7 +17,7 @@ git clone https://github.com/jginesta/itmo544-444-fall2015.git /tmp/web/ > /tmp/
 sudo mv /tmp/web/* /var/www/html/ > /tmp/update.txt
 
 # Making two new folders imagesResult and result in order to save images for s3
-sudo mkdir /var/www/html/imagesResult > /tmp/hello.txt > /tmp/update.txt
+sudo mkdir /var/www/html/imagesResult > /tmp/update.txt 
 
 sudo chmod 777 /var/www/html/imagesResult > /tmp/update.txt
 
